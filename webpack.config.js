@@ -29,5 +29,11 @@ module.exports = {
     root: [
       path.resolve('app'),
     ],
+  },
+  devServer: {
+    historyApiFallback: true,
+    progress: true,
+    host: '0.0.0.0',
+    port: 8080
   }
 }

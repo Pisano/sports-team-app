@@ -1,4 +1,4 @@
-var appTemplate = require('text!app.html');
+import appTemplate from 'text!app.html';
 
 const AppController = function() {
   var vm = this;
