@@ -4,10 +4,12 @@
     <title>App</title>
   </head>
   <body>
-    <div ng-controller="AppController as vm">
-      <h1>{{ vm.header }}</h1>
-    </div>
-    <script type="text/javascript" src="lib/angular.js"></script>
-    <script type="text/javascript" src="bundle.js"></script>
+    <app />
+
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap-theme.min.css">
+    <script type="text/javascript" src="/dist/bundle.js"></script>
   </body>
 </html>
