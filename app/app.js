@@ -4,10 +4,12 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import AppComponent from './app.component';
 import Home from './home';
+import Teams from './teams';
 
 const root = angular
   .module('sportsApp', [
     Home,
+    Teams,
     uiRouter
   ])
   .config(($locationProvider, $urlRouterProvider) => {
