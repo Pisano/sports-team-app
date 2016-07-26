@@ -1,3 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.css';
+import 'app.css';
 import angular from 'angular';
 import AppComponent from './app.component';
 
