@@ -2,8 +2,8 @@
   <div class="header clearfix">
     <nav>
       <ul class="nav nav-pills pull-right">
-        <li role="presentation" class="active"><a href="/">Home</a></li>
-        <li role="presentation"><a href="/teams">Teams</a></li>
+        <li role="presentation" ng-class="{'active': $ctrl.isState('home') }"><a href="/">Home</a></li>
+        <li role="presentation" ng-class="{'active': $ctrl.isState('teams') }"><a href="/teams">Teams</a></li>
       </ul>
     </nav>
   
