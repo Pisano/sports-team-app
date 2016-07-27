@@ -5,6 +5,7 @@ class TeamDetailController {
   }
   $onInit() {
     this.refresh();
+    this.newPlayerForm = {name: ''};
   }
   removePlayer(player) {
     let teamUrl = 'http://localhost:3000/players/' + player.id;
@@ -21,6 +22,18 @@ class TeamDetailController {
       .then((result) => {
         this.teamDetail = result.data;
       });
+  }
+  addPlayer() {
+    let newName = this.newPlayerForm.name;
+    let playersUrl = 'http://localhost:3000/players/';
+    this.$http.post(playersUrl, {
+      name: newName,
+      team_id: this.$stateParams.id
+    })
+    .then((result) => {
+      this.newPlayerForm.name = '';
+      this.refresh();
+    });
   }
 }
 

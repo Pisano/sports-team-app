@@ -22,5 +22,16 @@
         </button>
       </td>
     </tr>
+    <tr>
+      <td></td>
+      <td>
+      <form class="form-inline" ng-submit="$ctrl.addPlayer()">
+        <input class="form-control input-xs" type="text"
+               ng-model="$ctrl.newPlayerForm.name">
+        <input type="submit" class="btn btn-primary" />
+      </form>
+      </td>
+      <td></td>
+    </tr>
   </tbody>
 </table>
