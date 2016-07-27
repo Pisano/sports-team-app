@@ -1,7 +1,7 @@
 class HomeController {
   constructor() { }
   $onInit() {
-    this.content = 'Fantasy Football';
+    this.header = 'Fantasy Football';
   }
 }
 
