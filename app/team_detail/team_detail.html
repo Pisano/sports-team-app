@@ -1,4 +1,26 @@
 <h1>{{ $ctrl.teamDetail.name }}</h1>
-<ol>
-  <li ng-repeat="player in $ctrl.teamDetail.players">{{ player.name }}</li>
-</ol>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Player Name</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="player in $ctrl.teamDetail.players">
+      <td>
+      {{ player.id }}
+      </td>
+      <td>
+      {{ player.name }}
+      </td>
+      <td>
+        <button class="btn btn-xs btn-danger"
+                ng-click="$ctrl.removePlayer(player)">
+          <span class="ff-icon glyphicon glyphicon-remove"></span>
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
